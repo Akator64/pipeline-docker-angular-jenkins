@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:8.3' } }
+    tools {nodejs "node"}
     stages {
         stage('install') {
             steps {
